@@ -15,6 +15,8 @@ import 'package:flutter_app_new/widget/search_nav.dart';
 import 'package:flutter_app_new/widget/sub_nav.dart';
 import 'package:flutter_app_new/widget/webview.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_splash_screen/flutter_splash_screen.dart';
+
 const APPBAR_SCROLL_OFFSET = 100;
 
 class HomePage extends StatefulWidget {
@@ -54,6 +56,9 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     onLoadData();
+    Future.delayed(Duration(milliseconds: 600), () {
+      FlutterSplashScreen.hide();
+    });
   }
 
   @override

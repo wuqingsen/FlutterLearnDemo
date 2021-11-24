@@ -25,6 +25,8 @@ dependencies:
 
   json_serializable: 3.2.0
 
+  flutter_splash_screen: ^0.3.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
